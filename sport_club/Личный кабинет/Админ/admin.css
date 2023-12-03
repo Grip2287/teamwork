@@ -1,0 +1,212 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "NotoMono-Regular";
+    src: url(../../fonts/NotoMono-Regular.ttf);
+}
+
+nav {
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+}
+
+#flex {
+    display: flex;
+    gap: 100px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.nav_main,
+.nav_section,
+.nav_timetable,
+.nav_personal-account,
+.nav_exit {
+    color: #FFF;
+    font-family: NotoMono-Regular;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143.4%;
+    /* 45.888px */
+    transition: 3s;
+}
+
+.account_title {
+    color: #000000;
+    font-family: NotoMono-Regular;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143.4%;
+}
+
+.nav_main:hover,
+.nav_section:hover,
+.nav_timetable:hover,
+.nav_personal-account:hover,
+.nav_exit:hover {
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    transition: 3s;
+}
+
+footer {
+    background-image: url(images/bg-image-footer.png);
+    width: 1920px;
+    height: 350px;
+    background-repeat: no-repeat;
+    margin-top: 150px;
+}
+
+.footer-background {
+    position: relative;
+}
+
+.footer-background-stick-left-top {
+    position: absolute;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+    align-items: center;
+
+}
+
+.footer-content-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #CCCCCC;
+    color: #CCC;
+    text-align: center;
+    font-family: Inconsolata;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    /* 195.313% */
+
+}
+
+.footer-content-contacts a {
+    text-decoration: none;
+    color: #CCCCCC;
+    margin: 0;
+}
+
+.footer-content-contacts h2 {
+    text-align: center;
+
+}
+
+.footer-content-number {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inconsolata;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 62.5px;
+    /* 312.5% */
+
+}
+
+.footer-content-contacts-number {
+    margin: 0;
+}
+
+.footer-content-number-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #CCCCCC;
+
+}
+
+.account_img {
+    float: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 596px;
+    gap: 25px;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.account {
+    margin: 150px auto;
+    width: 1169px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    flex-direction: column;
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 40px;
+}
+
+.account_name,
+.account_surname,
+.account_age,
+.account_email,
+.account_series,
+.account_passport_number {
+    font-family: NotoMono-Regular;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143.4%;
+    width: 630px;
+    height: 60px;
+    background-color: rgba(202, 202, 202, 1);
+    border: none;
+    border-radius: 50px;
+    padding-left: 45px;
+    margin: 0 auto;
+}
+
+.record {
+    width: 300px;
+    height: 60px;
+    border-radius: 35px;
+    background-color: rgba(123, 7, 27, 1);
+    border: none;
+    color: white;
+    text-align: center;
+    font-family: Fira Code;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.72px;
+}
+
+.but {
+    align-items: center;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    gap: 350px;
+}
+
+.a_href {
+    text-decoration: none;
+}

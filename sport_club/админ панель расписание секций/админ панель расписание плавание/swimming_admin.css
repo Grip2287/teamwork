@@ -1,0 +1,240 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #fff;
+}
+
+@font-face {
+    font-family: "NotoMono-Regular";
+    src: url(../../fonts/NotoMono-Regular.ttf);
+}
+
+nav {
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+}
+
+#flex {
+    display: flex;
+    gap: 100px;
+}
+
+.a_href {
+    text-decoration: none;
+}
+
+.nav_main,
+.nav_section,
+.nav_timetable,
+.nav_personal-account,
+.nav_exit {
+    color: #FFF;
+    font-family: NotoMono-Regular;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143.4%;
+    /* 45.888px */
+    transition: 3s;
+}
+
+.account_title {
+    color: #000000;
+    font-family: NotoMono-Regular;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143.4%;
+}
+
+.nav_main:hover,
+.nav_section:hover,
+.nav_timetable:hover,
+.nav_personal-account:hover,
+.nav_exit:hover {
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    transition: 3s;
+}
+
+
+/* таблицы */
+.main-content-search-sections {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.section_name {
+    text-align: center;
+    font-family: NotoMono-Regular;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 800;
+}
+
+.main-content-search {
+    border-radius: 8px;
+    border: 1px solid var(--gray-300, #D0D5DD);
+    background: #D9D9D9;
+    display: flex;
+    width: 300px;
+    height: 44px;
+    gap: 5px;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 0px 14px;
+    margin: 30px 0 0 90px;
+}
+
+.main-content-search select {
+    border: none;
+    color: var(#667085);
+    background-color: #d9d9d9;
+    font-family: NotoMono-Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 150% */
+    height: 30px;
+    width: 100%;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.main-content-search select:hover {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.main-content-search button {
+    background-color: #D9D9D9;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+    height: 30px;
+}
+
+.main-content-search button:hover {
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.select1 {
+    color: #667085;
+}
+
+.main-content-tables {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+
+    display: flex;
+}
+
+th {
+    height: 50px;
+    width: 100px;
+    border: #000 solid 1px
+}
+
+.main-content-tables-block {
+    margin: 30px;
+}
+
+.main-content-tables-block-img {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+/* подвал */
+footer {
+    background-image: url(images/bg-image-footer.png);
+    width: 1920px;
+    height: 350px;
+    background-repeat: no-repeat;
+}
+
+.footer-background {
+    position: relative;
+}
+
+.footer-background-stick-left-top {
+    position: absolute;
+}
+
+.footer-content {
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 100px;
+    align-items: center;
+
+}
+
+.footer-content-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #CCCCCC;
+    color: #CCC;
+    text-align: center;
+    font-family: Inconsolata;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    /* 195.313% */
+
+}
+
+.footer-content-contacts a {
+    text-decoration: none;
+    color: #CCCCCC;
+    margin: 0;
+}
+
+.footer-content-contacts h2 {
+    text-align: center;
+
+}
+
+.footer-content-number {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #FFF;
+    text-align: center;
+    font-family: Inconsolata;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 62.5px;
+    /* 312.5% */
+    vertical-align: middle;
+
+}
+
+.footer-content-contacts-number {
+    margin: 0;
+}
+
+.footer-content-number-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #CCCCCC;
+
+}

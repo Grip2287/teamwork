@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20%;
+}
+
+#flex {
+    display: flex;
+    gap: 100px;
+}
+@font-face {
+    font-family:"NotoMono-Regular";
+    src: url(../../fonts/NotoMono-Regular.ttf);
+}
+.link {
+    text-decoration: none;
+}
+
+.nav_main,
+.nav_section,
+.nav_timetable,
+.nav_personal-account,
+.nav_exit {
+    color: #FFF;
+    font-family: NotoMono-Regular;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 143.4%;
+    /* 45.888px */
+    transition: 3s;
+}
+
+.nav_main:hover,
+.nav_section:hover,
+.nav_timetable:hover,
+.nav_personal-account:hover,
+.nav_exit:hover {
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    transition: 3s;
+}
+
+.gym_motivation {
+    display: flex;
+    height: 900px;
+    background-image: url(images/gym_main.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.gym_motivation_title {
+    color: white;
+    font-size: 56px;
+    font-family:NotoMono-Regular;
+    font-weight: 400;
+    line-height: 101.06px;
+    word-wrap: break-word;
+    padding-right: 10px;
+    align-self: flex-start;
+    padding-left: 35px;
+}
+
+.gym_motivation_next_title {
+    color: white;
+    font-size: 56px;
+    font-family:NotoMono-Regular;
+    font-weight: 400;
+    line-height: 93.21px;
+    word-wrap: break-word;
+    padding-right: 35px;
+    padding-bottom:20px ;
+
+}
+
+.gym_motivation .gym_motivation_title {
+    align-self: flex-start;
+    justify-content: flex-start;
+}
+
+.age_group {
+    text-align: center;
+    color: black;
+    font-size: 41px;
+    font-family:NotoMono-Regular;
+    font-weight: 400;
+    line-height: 67.81px;
+    word-wrap: break-word
+}
+
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    border: #383838 1px solid;
+}
+
+.column_1 {
+    font-family: NotoMono-Regular;
+    font-size: 15px;
+    width: 180px;
+    height: 90px;
+    color: rgba(102, 112, 133, 1);
+    border: #383838 1px solid;
+}
+
+.column_2 {
+    font-family: NotoMono-Regular;
+    font-size: 15px;
+    width: 90px;
+    height: 100px;
+    color: rgba(102, 112, 133, 1);
+    border: #383838 1px solid;
+}
+
+span.coach_1 {
+    color: rgb(0, 0, 0);
+}
+
+span.coach_2 {
+    color: rgb(0, 0, 0);
+}
+
+span.coach_3 {
+    color: rgb(133, 130, 130);
+}
+
+.but_record {
+    padding: 10px 50px 10px 50px;
+    background-color: rgba(123, 7, 27, 1);
+    border-radius: 55px;
+    color: white;
+    font-size: 40px;
+    font-family:NotoMono-Regular;
+    font-weight: 400;
+    line-height: 77.74px;
+    word-wrap: break-word
+}
+.but{
+    margin: 100px 0 100px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    background-image: url(images/bg-image-footer.png);
+    width: 1920px;
+    height: 350px;
+    background-repeat: no-repeat;
+    margin-top: 20px;
+}
+
+.footer-background {
+    position: relative;
+}
+
+.footer-background-stick-left-top {
+    position: absolute;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-content-contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #CCCCCC;
+    color: #CCC;
+    text-align: center;
+    font-family:NotoMono-Regular;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    /* 195.313% */
+}
+
+.footer-content-contacts a {
+    text-decoration: none;
+    color: #CCCCCC;
+    margin: 0;
+}
+
+.footer-content-contacts h2 {
+    text-align: center;
+}
+
+.footer-content-number {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #FFF;
+    text-align: center;
+    font-family:NotoMono-Regular;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 62.5px;
+    /* 312.5% */
+
+}
+
+.footer-content-contacts-number {
+    margin: 0;
+}
+
+.footer-content-number-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #CCCCCC;
+
+}

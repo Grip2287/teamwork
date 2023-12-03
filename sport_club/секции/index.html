@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../JS для модальных окон/modal_entrance.css '>
+</head>
+
+<body>
+    <div id="bg_fon_entrance" class="bg_fon_entrance">
+        <div id="registration_entrance" class="registration_entrance">
+            <div class="registration_title_close">
+                <h2 class="registration_title">Войти</h2>
+                <button class="but_close" onclick="сlose_modal_entrance()"><img class="close"
+                        src="../JS для модальных окон/images/close.png" alt=""></button>
+            </div>
+            <form class="form" action="">
+                <input class="registration_email" type="email" name="" id="email" placeholder="логин">
+                <input class="registration_password" type="password" name="" id="password" placeholder="Пароль">
+                <label class="submit" for=""><input onclick="checkLogin()" class="record" type="submit"></label>
+            </form>
+        </div>
+    </div>
+    <nav>
+        <img src="images/logo_main.png" alt="" height="80px" width="80px">
+        <div id="flex">
+            <a class="link" href="../главная/index.html">
+                <p class="nav_main">Главная</p>
+            </a>
+            <a class="link" href="../секции/index.html">
+                <p class="nav_section">Секции</p>
+            </a>
+            <a class="link" href="../Расписание секций/box/box.html">
+                <p class="nav_timetable">Расписание</p>
+            </a>
+            <p onclick="opena()" class="nav_personal-account">Личный кабинет</p>
+        </div>
+    </nav>
+    <div class="section">
+        <h2 class="section_title">Секции</h2>
+        <div class="section_flex">
+            <div class="section_box">
+                <a href="#box_section_timetable"><img src="images/box.png" alt=""></a>
+                <p class="section_subtitle">Бокс</p>
+            </div>
+            <div class="section_karate">
+                <a href="#karate_section_timetable"><img src="images/karate.png" alt=""></a>
+                <p class="section_subtitle">Карате</p>
+            </div>
+            <div class="section_gym">
+                <a href="#gym_section_timetable"><img src="images/gym.png" alt=""></a>
+                <p class="section_subtitle">Тренажерный зал</p>
+            </div>
+            <div class="section_yoga">
+                <a href="#yoga_section_timetable"><img src="images/yoga.png" alt=""></a>
+                <p class="section_subtitle">Йога</p>
+            </div>
+            <div class="section_swimming">
+                <a href="#swimming_section_timetable"><img src="images/swimming.png" alt=""></a>
+                <p class="section_subtitle">Плавание</p>
+            </div>
+        </div>
+    </div>
+    <div class="arrow">
+        <a href="#box_section_timetable"><img id="arrow" src="images/arrow.png" alt=""></a>
+    </div>
+    <div class="section_timetable_1" id="box_section_timetable">
+        <img src="images/box_section_timetable.png" alt="">
+        <div class="section_timetable_info_but_next">
+            <p class="section_timetable_info">В целом, боксерский клуб - это уникальное место,
+                которое предоставляет возможности для развития физических
+                и психологических навыков, а также общения с людьми,
+                которые разделяют вашу страсть к боксу. Он является
+                отличным выбором для тех, кто ищет спортивный клуб,
+                который подходит для всех возрастов и уровней подготовки.</p>
+            <a href="../Расписание секций/box/box.html"><button id="but_next_timetable"
+                    class="but_next_timetable_1">расписание</button></a>
+        </div>
+    </div>
+    <div class="arrow">
+        <a href="#karate_section_timetable"><img id="arrow" src="images/arrow.png" alt=""></a>
+    </div>
+    <div class="section_timetable_2" id="karate_section_timetable">
+        <img src="images/karate_section_timetable.png" alt="">
+        <div class="section_timetable_info_but_next">
+            <p class="section_timetable_info">Каратэ - это не только боевое искусство, но и
+                философия жизни.Он учит дисциплине, самоконтролю и
+                умению защищаться,что делает его полезным для людей
+                любого возраста и пола.Независимо от того, кем вы
+                являетесь и какие цели вы ставите перед собой.</p>
+            <a href="../Расписание секций/karate/karate.html"><button id="but_next_timetable"
+                    class="but_next_timetable_2">расписание</button></a>
+        </div>
+    </div>
+    <div class="arrow">
+        <a href="#gym_section_timetable"><img id="arrow" src="images/arrow.png" alt=""></a>
+    </div>
+    <div class="section_timetable_1" id="gym_section_timetable">
+        <img src="images/gym_section_timetable.png" alt="">
+        <div class="section_timetable_info_but_next">
+            <p class="section_timetable_info">Вы сделаете это – и не завтра, а уже сегодня!
+                Если вы уже купили кроссовки и лосины, а новенькая
+                спортивная сумка пылится в углу и ждет своего часа,
+                Ведь нужно только начать, а дальше – втянетесь,
+                и тело само начнет «просить» спорта.
+            </p>
+            <a href="../Расписание секций/gym/gym.html"><button id="but_next_timetable"
+                    class="but_next_timetable_1">расписание</button></a>
+        </div>
+    </div>
+    <div class="arrow">
+        <a href="#yoga_section_timetable"><img id="arrow" src="images/arrow.png" alt=""></a>
+    </div>
+    <div class="section_timetable_2" id="yoga_section_timetable">
+        <img src="images/yoga_section_timetable.png" alt="">
+        <div class="section_timetable_info_but_next">
+            <p class="section_timetable_info">Йога — это не просто физические упражнения и
+                расслабление.Это целостный подход к человеку, который
+                помогает ему раскрыть свой внутренний потенциал и
+                достичь гармонии в своей жизни. В настоящее время йога
+                стала популярной не только среди людей, ведущих
+                здоровый образ жизни, но и среди тех, кто ищет способ
+                духовного развития.</p>
+            <a href="../Расписание секций/yoga/yoga.html"><button id="but_next_timetable"
+                    class="but_next_timetable_2">расписание</button></a>
+        </div>
+    </div>
+    <div class="arrow">
+        <a href="#swimming_section_timetable"><img id="arrow" src="images/arrow.png" alt=""></a>
+    </div>
+    <div class="section_timetable_1" id="swimming_section_timetable">
+        <img src="images/swimming_section_timetable.png" alt="">
+        <div class="section_timetable_info_but_next">
+            <p class="section_timetable_info">многофункциональный центр с бассейном
+                и современным оборудованием, позволяющим
+                научиться уверенно держаться на воде.
+                Дети по достоинству оценят невероятно красивый интерьер.</p>
+            <a href="../Расписание секций/swimming/swimming.html"><button id="but_next_timetable"
+                    class="but_next_timetable_1">расписание</button></a>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-background">
+            <div class="footer-background-stick-left-top">
+
+            </div>
+            <div class="footer-background-stick-left-bottom"></div>
+            <div class="footer-background-stick-right-bottom"></div>
+            <div class="footer-background-stick-left-top"></div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-content-image">
+                <img src="images/logo.svg">
+            </div>
+            <div class="footer-content-contacts">
+                <h2>Контакты</h2>
+                <p class="footer-content-contacts-number">телефон: <a href="tel:(347) 222-20-52">(347) 222-20-52</a></p>
+                <p class="footer-content-contacts-number">e-mail: <a href="mailto:mail@sport102.ru">mail@sport102.ru</a>
+                </p>
+            </div>
+            <div class="footer-content-number">
+                <div class="footer-content-number-flex">
+                    <img src="images/tg.svg" alt="">
+                    <p class="footer-content-contacts-number">(347) 222-20-52</p>
+                </div>
+                <div class="footer-content-number-flex">
+                    <img src="images/watsapp.svg" alt="">
+                    <p class="footer-content-contacts-number">(347) 222-20-52</p>
+                </div>
+                <div class="footer-content-number-flex">
+                    <img src="images/vk.svg" alt="">
+                    <p class="footer-content-contacts-number">(347) 222-20-52</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../JS для модальных окон/Modal_entrance.js"></script>
+    <script src="../JS для модальных окон/check_entrance.js"></script>
+</body>
+
+</html>

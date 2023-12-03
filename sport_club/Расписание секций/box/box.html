@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='box.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../JS для модальных окон/modal_record.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../../JS для модальных окон/modal_entrance.css '>
+</head>
+
+<body>
+    <div id="bg_fon_entrance" class="bg_fon_entrance">
+        <div id="registration_entrance" class="registration_entrance">
+            <div class="registration_title_close">
+                <h2 class="registration_title">Войти</h2>
+                <button class="but_close" onclick="сlose_modal_entrance()"><img class="close"
+                        src="../../JS для модальных окон/images/close.png" alt=""></button>
+            </div>
+            <form class="form" action="">
+                <input class="registration_email" type="email" name="" id="email" placeholder="логин">
+                <input class="registration_password" type="password" name="" id="password" placeholder="Пароль">
+                <label class="submit" for=""><input onclick="checkLogin()" class="record" type="submit"></label>
+            </form>
+        </div>
+    </div>
+    <div id="bg_fon" class="bg_fon">
+        <div id="registration" class="registration">
+            <div class="registration_title_close">
+                <h2 class="registration_title">Запись</h2>
+                <button class="but_close" onclick="сlose_modal_registration()"><img class="close"
+                        src="../../JS для модальных окон/images/close.png" alt="">
+            </div>
+            <form class="form" action="">
+                <input class="registration_name" type="text" placeholder="Имя">
+                <input class="registration_surname" type="text" placeholder="Фамилия">
+                <input class="registration_age" type="number" placeholder="Возвраст">
+                <input class="registration_email" type="email" name="" id="" placeholder="Почта">
+                <label><input class="registration_approval" type="checkbox" name="" id="">Я принимаю согласие на
+                    обработку
+                    персональных
+                    данных</label>
+                <label class="submit" for=""><input onclick="alert_result()" class="record" type="submit"></label>
+            </form>
+        </div>
+    </div>
+    <nav id="nav">
+        <img src="images/logo_main.png" alt="" height="80px" width="80px">
+        <div id="flex">
+            <a class="link" href="../../главная/index.html">
+                <p class="nav_main">Главная</p>
+            </a>
+            <a class="link" href="../../секции/index.html">
+                <p class="nav_section">Секции</p>
+            </a>
+            <a class="link" href="../box/box.html">
+                <p class="nav_timetable">Расписание</p>
+            </a>
+            <p onclick="opena()" class="nav_personal-account">Личный кабинет</p>
+        </div>
+    </nav>
+    <div class="box_motivation">
+        <h1 class="box_motivation_title">Прокачай свое тело и укрепи здоровье</h1>
+        <h1 class="box_motivation_next_title">Стань сильнее, быстрее и выносливее </h1>
+    </div>
+    <h2 class="age_group">Расписание <br>
+        группы от 17 лет </h2>
+    <table>
+        <tr class="1_line">
+            <th class="column_1"><img src="images/clock-line-icon 1.png" alt=""></th>
+            <th class="column_1">ПН</th>
+            <th class="column_1">ВТ</th>
+            <th class="column_1">СР</th>
+            <th class="column_1">ЧТ</th>
+            <th class="column_1">ПТ</th>
+            <th class="column_1">СБ</th>
+            <th class="column_1">ВС</th>
+        </tr>
+        <tr class="line">
+            <th class="column_2">8:00</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                Малый зал (1 корпус)</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                Малый зал (1 корпус)</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Средний зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                большой зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Средний зал (1 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Средний зал (1 корпус)</th>
+        </tr>
+        <tr class="line">
+            <th class="column_2">10:00</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                Малый зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                большой зал (1 корпус)</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Малый зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Малый зал (1 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                большой зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                большой зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал (1 корпус)</th>
+        </tr>
+        <tr class="line">
+            <th class="column_2">12:00</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                большой зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                Средний зал</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Малый зал</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                большой зал</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                большой зал</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Средний зал</th>
+        </tr>
+        <tr class="line">
+            <th class="column_2">14:00</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                Средний зал</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                Малый зал</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Средний зал</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Малый зал</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Средний зал</th>
+        </tr>
+        <tr class="line">
+            <th class="column_2">16:00</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                Малый зал</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                Средний зал</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Средний зал</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Средний зал</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                большой зал</th>
+        </tr>
+        <tr class="line">
+            <th class="column_2">18:00</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                большой зал</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                большой зал</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                большой зал</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Малый зал</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Малый зал</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                большой зал</th>
+        </tr>
+        <tr class="line">
+            <th class="column_2">20:00</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                Средний зал</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                Средний зал</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Средний зал</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Малый зал</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Средний зал</th>
+        </tr>
+    </table>
+    <h2 class="age_group">Расписание <br>
+        группы от 9 до 16 лет </h2>
+    <table>
+        <tr class="1_line">
+            <th class="column_1"><img src="images/clock-line-icon 1.png" alt=""></th>
+            <th class="column_1">ПН</th>
+            <th class="column_1">ВТ</th>
+            <th class="column_1">СР</th>
+            <th class="column_1">ЧТ</th>
+            <th class="column_1">ПТ</th>
+            <th class="column_1">СБ</th>
+            <th class="column_1">ВС</th>
+        </tr>
+        <tr class="line">
+            <th class="column_2">8:00</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Средний зал (1 корпус)</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                большой зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Средний зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал (3 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Средний зал (1 корпус)</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                Малый зал (1 корпус)</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                Малый зал (1 корпус)</th>
+        </tr>
+        <tr class="line">
+            <th class="column_2">10:00</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Малый зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Малый зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                большой зал(3 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                большой зал(3 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал(2 корпус)</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                Малый зал(3 корпус)</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                большой зал (2 корпус)</th>
+        </tr>
+        <tr class="line">
+            <th class="column_2">12:00</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                большой зал (3 корпус)</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                большой зал (3 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                большой зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Средний зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                Средний зал (1 корпус)</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Малый зал (3 корпус)</th>
+
+        </tr>
+        <tr class="line">
+            <th class="column_2">14:00</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал (1 корпус)</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                Средний зал (1 корпус)</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Средний зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Малый зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Средний зал (3 корпус)</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                Малый зал (3 корпус)</th>
+
+        </tr>
+        <tr class="line">
+            <th class="column_2">16:00</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                большой зал (1 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал (3 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                большой зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                Средний зал (1 корпус)</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Средний зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Средний зал (3 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал (3 корпус)</th>
+
+        </tr>
+        <tr class="line">
+            <th class="column_2">18:00</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                большой зал (3 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                большой зал (3 корпус)</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                большой зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Малый зал (1 корпус)</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Малый зал (3 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал (1 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                большой зал (3 корпус)</th>
+        </tr>
+        <tr class="line">
+            <th class="column_2">20:00</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                Средний зал (2 корпус)</th>
+            <th class="column_2"><span class="coach_1">Имангулов В.У</span><br>
+                Средний зал (1 корпус)</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Средний зал (1 корпус)</th>
+            <th class="column_2"><span class="coach_2">Давлетов Д.В</span><br>
+                Малый зал (3 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал (1 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Малый зал (3 корпус)</th>
+            <th class="column_2"><span class="coach_3">Ардуванов Р.Р</span><br>
+                Средний зал (3 корпус)</th>
+        </tr>
+    </table>
+    <div class="but">
+        <a href="../swimming/swimming.html"><button class="but_record"> Предыдущая </button></a>
+        <button onclick="scrollToTop()" id="but_record" class="but_record"> Записаться </button>
+        <a href="../karate/karate.html"><button class="but_record"> Следующая </button></a>
+    </div>
+    <footer>
+        <div class="footer-background">
+            <div class="footer-background-stick-left-top">
+
+            </div>
+            <div class="footer-background-stick-left-bottom"></div>
+            <div class="footer-background-stick-right-bottom"></div>
+            <div class="footer-background-stick-left-top"></div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-content-image">
+                <img src="images/logo.svg">
+            </div>
+            <div class="footer-content-contacts">
+                <h2>Контакты</h2>
+                <p class="footer-content-contacts-number">телефон: <a href="tel:(347) 222-20-52">(347) 222-20-52</a>
+                </p>
+                <p class="footer-content-contacts-number">e-mail: <a href="mailto:mail@sport102.ru">mail@sport102.ru</a>
+                </p>
+            </div>
+            <div class="footer-content-number">
+                <div class="footer-content-number-flex">
+                    <img src="images/tg.svg" alt="">
+                    <p class="footer-content-contacts-number">(347) 222-20-52</p>
+                </div>
+                <div class="footer-content-number-flex">
+                    <img src="images/watsapp.svg" alt="">
+                    <p class="footer-content-contacts-number">(347) 222-20-52</p>
+                </div>
+                <div class="footer-content-number-flex">
+                    <img src="images/vk.svg" alt="">
+                    <p class="footer-content-contacts-number">(347) 222-20-52</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../../JS для модальных окон/Modal_registration.js"></script>
+    <script src="../../JS для модальных окон/Modal_entrance.js"></script>
+    <script src="../../JS для модальных окон/check_entrance_section.js"></script>
+
+</body>
+
+</html>

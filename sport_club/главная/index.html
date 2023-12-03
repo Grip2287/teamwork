@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../JS для модальных окон/modal_record.css'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../JS для модальных окон/modal_entrance.css'>
+
+</head>
+
+<body>
+    <nav>
+        <img src="images/logo_main.png" alt="" height="80px" width="80px">
+        <div id="flex">
+            <a class="link" href="../главная/index.html">
+                <p class="nav_main">Главная</p>
+            </a>
+            <a class="link" href="../секции/index.html">
+                <p class="nav_section">Секции</p>
+            </a>
+            <a class="link" href="../Расписание секций/box/box.html">
+                <p class="nav_timetable">Расписание</p>
+            </a>
+
+            <p onclick="opena()" class="nav_personal-account">Личный кабинет</p>
+        </div>
+    </nav>
+    <div id="bg_fon_entrance" class="bg_fon_entrance">
+        <div id="registration_entrance" class="registration_entrance">
+            <div class="registration_title_close">
+                <h2 class="registration_title">Войти</h2>
+                <button class="but_close" onclick="сlose_modal_entrance()"><img class="close"
+                        src="../JS для модальных окон/images/close.png" alt=""></button>
+            </div>
+            <form class="form" action="">
+                <input class="registration_email" type="email" name="" id="email" placeholder="логин">
+                <input class="registration_password" type="password" name="" id="password" placeholder="Пароль">
+                <label class="submit" for=""><input onclick="checkLogin()" class="record" type="submit"></label>
+            </form>
+        </div>
+    </div>
+    <div id="bg_fon" class="bg_fon">
+        <div id="registration" class="registration">
+            <div class="registration_title_close">
+                <h2 class="registration_title">Запись</h2>
+                <button class="but_close" onclick="сlose_modal_registration()"><img class="close"
+                        src="../JS для модальных окон/images/close.png" alt=""></button>
+            </div>
+            <form class="form" action="">
+                <input class="registration_name" type="text" placeholder="Имя">
+                <input class="registration_surname" type="text" placeholder="Фамилия">
+                <input class="registration_age" type="number" placeholder="Возвраст">
+                <input class="registration_email" type="email" name="" id="" placeholder="Почта">
+                <label><input class="registration_approval" type="checkbox" name="" id="">Я принимаю согласие на
+                    обработку
+                    персональных
+                    данных</label>
+                <label class="submit" for=""><input onclick="alert_result()" class="record" type="submit"></label>
+            </form>
+        </div>
+    </div>
+    <header>
+        <div class="arrows">
+            <img src="" alt=""><img src="" alt="">
+        </div>
+        <h1 class="header_slogan">Героями не рождаются<br><span class="header_subtitle">
+                — героями становятся.</span></h1>
+    </header>
+    <div class="information_club">
+        <img src="images/block_information .png" alt="">
+        <div id="flex_information-btn">
+            <h2 class="information_title">О Центре спортивного клуба</h2>
+            <p class="information_subtitle">Общая площадь клуба, расположенного в микрорайоне Затон,составляет свыше 20
+                тысяч кв. м.
+                Одновременно его смогут посещать порядка 1 500 спортсменов . Здесь созданы все условия для проведения
+                тренировок по
+                5 видам спорта, в том числе для людей с ограниченными возможностями здоровья.</p>
+            <button onclick="scrollToTop()" id="but_record" class="record"> Записаться </button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-background">
+            <div class="footer-background-stick-left-top">
+
+            </div>
+            <div class="footer-background-stick-left-bottom"></div>
+            <div class="footer-background-stick-right-bottom"></div>
+            <div class="footer-background-stick-left-top"></div>
+        </div>
+        <div class="footer-content">
+            <div class="footer-content-image">
+                <img src="images/logo.svg">
+            </div>
+            <div class="footer-content-contacts">
+                <h2>Контакты</h2>
+                <p class="footer-content-contacts-number">телефон: <a href="tel:(347) 222-20-52">(347) 222-20-52</a></p>
+                <p class="footer-content-contacts-number">e-mail: <a href="mailto:mail@sport102.ru">mail@sport102.ru</a>
+                </p>
+            </div>
+            <div class="footer-content-number">
+                <div class="footer-content-number-flex">
+                    <img src="images/tg.svg" alt="">
+                    <p class="footer-content-contacts-number">(347) 222-20-52</p>
+                </div>
+                <div class="footer-content-number-flex">
+                    <img src="images/watsapp.svg" alt="">
+                    <p class="footer-content-contacts-number">(347) 222-20-52</p>
+                </div>
+                <div class="footer-content-number-flex">
+                    <img src="images/vk.svg" alt="">
+                    <p class="footer-content-contacts-number">(347) 222-20-52</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../JS для модальных окон/Modal_registration.js"></script>
+    <script src="../JS для модальных окон/Modal_entrance.js"></script>
+    <script src="../JS для модальных окон/check_entrance.js"></script>
+</body>
+
+</html>
